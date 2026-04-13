@@ -6,8 +6,7 @@ Created on Mon Apr  6 13:24:21 2026
 """
 import numpy as np
 
-
-class Network(object):
+class Network:
     
     def __init__(self,sizes):
         self.num_layers = len(sizes)
@@ -99,4 +98,3 @@ def sigmoid(z):
 def sigmoid_prime(z):
     #derivitive of the sigmoid function
     return sigmoid(z)*(1-sigmoid(z))
-
